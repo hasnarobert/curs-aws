@@ -45,7 +45,7 @@ Se pot scrie programe intregi in bash. Toate scripturile de bootstrap din linux 
 
 ## Logarea in sistem
 
-1. Intr-un browser mergeti la `curs-aws.signin.aws.amazon.com` si logati-va.
+1. Intr-un browser mergeti la `https://curs-aws.signin.aws.amazon.com/console` si logati-va.
 
 ## Crearea unei chei de ssh
 
