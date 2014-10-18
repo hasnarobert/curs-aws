@@ -75,7 +75,7 @@ Porniti doua instante ale acestei aplicatii si trimiteti mesaje de pe una din el
 ## Rularea consumatorului pe o masina EC2
 
 1. Creati o masina EC2 ( Laborator 1 )
-2. Copiati jar-ul executabil al aplicatiei consumator pe masina remote: `scp -i <Key Pair> cale/identitate producator-consumator-1.0-SNAPSHOT-jar-with-dependencies.jar ec2-user@<IP_MASINA_EC2>:~/consumator.jar`
+2. Copiati jar-ul executabil al aplicatiei consumator pe masina remote: `scp -i <KeyPair> cale/identitate producator-consumator-1.0-SNAPSHOT-jar-with-dependencies.jar ec2-user@<IP_MASINA_EC2>:~/consumator.jar`
 3. Conectati-va prin ssh la masina remote si porniti aplicatia consumator.
 4. Rulati aplicatia producator local si trimiteti mesaje. Mesajele sunt citite de o masina EC2 care ruleaza in amazon.
 
