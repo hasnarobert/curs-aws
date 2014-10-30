@@ -20,7 +20,7 @@ Editati setarile ELB-ului nou creat si adaugati masinile pe care tocmai le-ati c
 
 1. Editati instantele asociate cu ELB-ul: ![](./load-balancer-10.png)
 1. Adaugati cele 2 masini pe care ruleaza server-ul HTTP: ![](./load-balancer-11.png)
-1. Masinile au fost adaugate dar ELB-ul nu trimite inca cereri catre ele. Trebuie sa se indeplineasca conditiile de healthcheck pe care le-ati setat cand ati ati creat ELB-ul: ![](./load-balancer-12.png)
+1. Masinile au fost adaugate dar ELB-ul nu trimite inca cereri catre ele. Trebuie sa se indeplineasca conditiile de healthcheck pe care le-ati setat cand ati creat ELB-ul: ![](./load-balancer-12.png)
 1. Cand conditiile sunt indeplinite, ELB-ul va trimite cererile catre masini: ![](./load-balancer-13.png)
 
 Deschideti un browser si introduceti adresa A Record a ELB-ului ( o gasiti la description ). Dati refresh de cateva ori si observati cum raspunsul variaza intre cereri. Cele doua mesaje pe care le-am scris in index.html pe fiecare server apar alternativ ( "Masina 1", "Masina 2" ).

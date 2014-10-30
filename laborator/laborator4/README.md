@@ -37,6 +37,9 @@ In directorul `laborator/laborator4/dynamo-db` aveti un exemplu care insereaza u
 2. Stergeti un mesaj.
 3. Extrageti toate mesajele care au acelasi `hash`.
 
+Gasiti un exemplu mai detaliat la [http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LowLevelJavaItemCRUD.html](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LowLevelJavaItemCRUD.html)
+
+
 
 # RDS
 
@@ -50,7 +53,11 @@ Conectati-va la ea folosind utilitarul `mysql` din linia de comanda: `mysql --ho
 
 Acum promptul accepta comenzi uzuale de mysql `CREATE TABLE`, `SELECT` etc. Creati un tabel cu cel putin 2 coloane si inserati niste date in el.
 
+Gasiti un tutorial la [https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial](https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial)
+
 ## Exercitiu
 
 Comunicati programatic cu baza de date creata prin RDS.
 Porniti de la unul dintre exemple. Veti avea nevoie sa editati fisierul de configurare maven `pom.xml` sa adaugati o noua dependinta pentru `connector-j` pentru ca JDBC sa poate comunica cu un server MySQL.
+
+Gasiti exemple la [http://zetcode.com/db/mysqljava/](http://zetcode.com/db/mysqljava/)

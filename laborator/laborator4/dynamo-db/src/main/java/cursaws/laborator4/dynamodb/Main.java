@@ -17,9 +17,9 @@ import java.util.Map;
 
 public class Main {
 
-  public static final String ACCESS_KEY = "AKIAIFJUTLY76VFOYAWA";
-  public static final String SECRET_KEY = "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";
-  public static final String TABLE_NAME = "dynamo-test";
+  public static final String ACCESS_KEY = "xxx";
+  public static final String SECRET_KEY = "xxx";
+  public static final String TABLE_NAME = "xxx";
 
   public static void main(String[] args) throws Exception {
     AWSCredentials credentials = new BasicAWSCredentials(ACCESS_KEY, SECRET_KEY);
