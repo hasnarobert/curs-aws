@@ -1,4 +1,4 @@
-package cursaws.webexample.service;
+package cursaws.webexample.impl;
 
 public class Greeting {
 
