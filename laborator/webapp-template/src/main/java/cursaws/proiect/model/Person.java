@@ -1,5 +1,8 @@
 package cursaws.proiect.model;
 
+/**
+ * Model pentru a stoca informatiile despre o persoana. Este serializata ca JSON peste HTTP din {@link cursaws.proiect.webapp.ApplicationController}
+ */
 public class Person {
 
     private String name;

@@ -10,16 +10,24 @@ import cursaws.proiect.model.Person;
 
 import java.util.HashMap;
 
+/**
+ * Lucreaza cu persone stocand si extragand datele lor din DynamoDB.
+ */
 public class PersonRepositoryImpl implements PersonRepository {
 
     private static final String TABLE_NAME = "webapp-template-person";
     private AmazonDynamoDB dynamoDB;
 
-
+    /**
+     * Acest constructor este apelat din {@link cursaws.proiect.webapp.Application} pentru a crea o componenta spring (@Bean)
+     */
     public PersonRepositoryImpl(AmazonDynamoDB dynamoDB) {
         this.dynamoDB = dynamoDB;
     }
 
+    /**
+     * Extrage date despre o anume persoana din baza da date.
+     */
     @Override
     public Person findPerson(final String name) {
         GetItemResult result = dynamoDB.getItem(new GetItemRequest()
@@ -36,6 +44,9 @@ public class PersonRepositoryImpl implements PersonRepository {
                           Integer.parseInt(result.getItem().get("age").getS()));
     }
 
+    /**
+     * Stocheaza informatiile despre o persoana in baza de date.
+     */
     @Override
     public void savePerson(final Person person) {
         dynamoDB.putItem(new PutItemRequest()

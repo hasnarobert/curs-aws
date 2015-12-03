@@ -14,6 +14,9 @@ import org.springframework.context.annotation.Configuration;
 import cursaws.proiect.service.PersonRepository;
 import cursaws.proiect.service.PersonRepositoryImpl;
 
+/**
+ * Are rolul de a initia obiectele/componentele (@Bean) folosite in aplicatie si de asemenea de a porni aplicatia Spring.
+ */
 @EnableAutoConfiguration
 @Configuration
 @ComponentScan
@@ -23,6 +26,10 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
+    /**
+     * Creaza componenta care gestioneaza persoanele in baza de date.
+     * @return
+     */
     @Bean
     public PersonRepository personRepository() {
         AmazonDynamoDB dynamoDB = new AmazonDynamoDBClient();
