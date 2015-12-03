@@ -21,7 +21,7 @@ public class PersonRepositoryImpl implements PersonRepository {
     }
 
     @Override
-    public Person findPerson(String name) {
+    public Person findPerson(final String name) {
         GetItemResult result = dynamoDB.getItem(new GetItemRequest()
                                                     .withTableName(TABLE_NAME)
                                                     .withKey(new HashMap<String, AttributeValue>() {{
@@ -37,7 +37,7 @@ public class PersonRepositoryImpl implements PersonRepository {
     }
 
     @Override
-    public void savePerson(Person person) {
+    public void savePerson(final Person person) {
         dynamoDB.putItem(new PutItemRequest()
                              .withTableName(TABLE_NAME)
                              .withItem(new HashMap<String, AttributeValue>() {{

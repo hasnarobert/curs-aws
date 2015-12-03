@@ -30,7 +30,7 @@ public class ApplicationController {
         return personRepository.findPerson(personName);
     }
 
-    @RequestMapping(path = "/person/{personName}/age/{age}", method = RequestMethod.POST)
+    @RequestMapping(value = "/person/{personName}/age/{age}", method = RequestMethod.POST)
     @ResponseBody
     public void savePerson(@PathVariable("personName") String personName, @PathVariable("age") String age) {
         personRepository.savePerson(new Person(personName, Integer.parseInt(age)));
