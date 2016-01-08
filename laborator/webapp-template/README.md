@@ -112,3 +112,4 @@ Pentru a rula aplicatie executati comanda: `java -jar target/webapp-template-0.1
 * Greeting cu un nume setat de noi: `curl "http://localhost:8080/greeting?name=Ionescu"`
 * Stocarea unei persoane in baza de date: `curl -X POST "http://localhost:8080/person/ionescu/age/71"`
 * Extragerea unei persoane din baza de date: `curl "http://localhost:8080/person/ionescu"`
+* Servirea unui fisier static: `curl "http://localhost:8080/my-static-file.txt"`
